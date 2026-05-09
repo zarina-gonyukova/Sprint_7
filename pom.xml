@@ -53,12 +53,23 @@
 <artifactId>allure-rest-assured</artifactId>
 <scope>test</scope>
 </dependency>
-<dependency>
-<groupId>org.aspectj</groupId>
-<artifactId>aspectjweaver</artifactId>
-<version>${aspectj.version}</version>
-<scope>test</scope>
-</dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${aspectj.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.30</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.14</version>
+        <scope>test</scope>
+    </dependency>
 </dependencies>
 <build>
 <plugins>

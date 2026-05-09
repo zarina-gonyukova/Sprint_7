@@ -68,4 +68,12 @@ public class OrderClient {
                 .filter(new AllureRestAssured())
                 .get(ApiConstants.ORDERS_PATH + "/track");
     }
+
+    @Step("Отменить заказ по track")
+    public Response cancelOrder(int track) {
+        return given()
+                .filter(new AllureRestAssured())
+                .queryParam("track", track)
+                .put(ApiConstants.ORDERS_PATH + "/cancel");
+    }
 }
